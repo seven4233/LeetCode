@@ -19,4 +19,5 @@ var romanToInt = function (s) {
       res += value;
     }
   }
+  return res;
 };
