@@ -1,3 +1,11 @@
+/*
+ * @Author: seven4233 1985858775@qq.com
+ * @Date: 2022-07-09 10:04:25
+ * @LastEditors: seven4233 1985858775@qq.com
+ * @LastEditTime: 2022-07-24 09:42:13
+ * @FilePath: \LeetCode\08.myAtoi.js
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ */
 // 字符串转整数
 
 /* 
@@ -29,7 +37,7 @@ var myAtoi = function (str) {
       } else if (typeof Number(char) === 'number' && !isNaN(char)) {
         return 2;
       } else {
-        return 3;
+        return 3; 
       }
     }
 
