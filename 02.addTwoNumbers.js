@@ -1,10 +1,11 @@
-/* 
-  -----------------------------------------（中等）两数相加 -------------------------------------------------------------------------
-      输入：l1 = [2,4,3], l2 = [5,6,4]
-      输出：[7,0,8]
-      解释：342 + 465 = 807.
-
-*/
+/*
+ * @Author: seven4233 1985858775@qq.com
+ * @Date: 2022-06-25 19:03:08
+ * @LastEditors: seven4233 1985858775@qq.com
+ * @LastEditTime: 2022-07-24 09:04:41
+ * @FilePath: \LeetCode\02.addTwoNumbers.js
+ * @Description: （中等）两数相加
+ */
 
 var addTwoNumbers = function (l1, l2) {
   let dummy = new ListNode(); //新链表的头节点
