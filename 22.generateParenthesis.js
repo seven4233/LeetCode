@@ -1,10 +1,16 @@
-/* 
-    中等： 括号生成
-*/
+/*
+ * @Author: seven4233 1985858775@qq.com
+ * @Date: 2022-07-16 22:46:23
+ * @LastEditors: seven4233 1985858775@qq.com
+ * @LastEditTime: 2022-07-24 09:01:24
+ * @FilePath: \LeetCode\22.generateParenthesis.js
+ * @Description: (中等) 括号生成
+ */
+    
 var generateParenthesis = function (n) {
   if (n === 0) return [];
 
-  let res = [];
+  let res = []; 
 
   function dfs(left, right, str) {
     //左右括号所剩的数量，str是当前构建的字符串
