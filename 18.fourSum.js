@@ -1,13 +1,17 @@
-/* 
-    四数之和 ： 中等
+/*
+ * @Author: seven4233 1985858775@qq.com
+ * @Date: 2022-07-14 09:39:37
+ * @LastEditors: seven4233 1985858775@qq.com
+ * @LastEditTime: 2022-07-24 11:08:08
+ * @FilePath: \LeetCode\18.fourSum.js
+ * @Description: (中等)四数之和
+ */
 
-    
-*/
 var fourSum = function (nums, target) {
   const qurdruplets = [];
 
   if (nums.length < 4) return [];
-  nums.sort((a, b) => a - b);
+  nums.sort((a, b) => a - b); //还是先排序
 
   const length = nums.length;
 
@@ -16,10 +20,10 @@ var fourSum = function (nums, target) {
     // nums[a]+nums[b]-target<-(nums[c]+nums[d])
 
     for (let j = i + 1; j < length - 2; j++) {
-      if (j > i + 1 && nums[j] === nums[j - 1]) continue;
+      if (j > i + 1 && nums[j] === nums[j - 1]) continue; //去重
 
-      let left = j + 1;
-      let right = length - 1;
+      let left = j + 1; //左指针
+      let right = length - 1; //右指针
 
       while (left < right) {
         const sum = nums[i] + nums[j] + nums[left] + nums[right];
@@ -32,8 +36,8 @@ var fourSum = function (nums, target) {
           continue;
         }
         qurdruplets.push([nums[i], nums[j], nums[left], nums[right]]);
-        while (left < right && nums[left] === nums[++left]);
-        while (left < right && nums[right] === nums[--right]);
+        while (left < right && nums[left] === nums[++left]); //去重
+        while (left < right && nums[right] === nums[--right]); //去重
       }
     }
   }
