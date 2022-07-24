@@ -1,11 +1,14 @@
-// 中等  整数转罗马数字
-
-/*  
-        --模拟 ，建立一张 数值-符号 对应表 ， 从大致小遍历
-
-*/
+/*
+ * @Author: seven4233 1985858775@qq.com
+ * @Date: 2022-07-10 09:20:22
+ * @LastEditors: seven4233 1985858775@qq.com
+ * @LastEditTime: 2022-07-24 10:20:29
+ * @FilePath: \LeetCode\12.intToRoman.js
+ * @Description: (中等)  整数转罗马数字
+ */
 
 var intToRoman = function (num) {
+  //   --模拟 ，建立一张 数值-符号 对应表 ， 从大致小遍历
   const valueSymbols = [
     [1000, 'M'],
     [900, 'CM'],
