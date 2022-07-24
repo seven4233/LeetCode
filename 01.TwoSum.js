@@ -1,10 +1,11 @@
-/* 
-  --------------------------------------------------（简单）两数之和-------------------------------------------------------------------------------
-
-      输入：nums = [2,7,11,15], target = 9
-      输出：[0,1]
-      解释：因为 nums[0] + nums[1] == 9 ，返回 [0, 1] 
-*/
+/*
+ * @Author: seven4233 1985858775@qq.com
+ * @Date: 2022-06-28 22:45:04
+ * @LastEditors: seven4233 1985858775@qq.com
+ * @LastEditTime: 2022-07-24 09:03:35
+ * @FilePath: \LeetCode\01.TwoSum.js
+ * @Description: （简单）两数之和
+ */
 
 var twoSum = function (nums, target) {
   let map = new Map(); //定义map
